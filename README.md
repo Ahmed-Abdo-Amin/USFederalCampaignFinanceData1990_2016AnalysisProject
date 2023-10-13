@@ -87,7 +87,7 @@ We must run these commands in editor python to perform Spark's core functionalit
 Spark configuration refers to the settings and parameters that can be adjusted to customize the behavior and performance of Apache Spark. These configurations are typically set in the `SparkConf` object before creating a SparkContext.
 We used a SparkSession object that provides a unified entry point for working with structured data in Spark. To Increase the memory allocated to Spark: we can allocate more memory to Spark by adjusting the `spark.driver.memory` and `spark.executor.memory` configuration properties, as shown in Figure [2]:
 
-> ![Alt text](./images/image.png)
+> [Alt text](./images/image.png)
 > <center> Figure [2]:  Spark configuration </center>
 <br><br>
 In Apache Spark, Executors are the worker nodes responsible for executing tasks in parallel. The Executor Memory refers to the amount of memory allocated to each Executor for storing data and executing tasks. The Driver is the program that coordinates the execution of tasks on the Executors. The Driver Memory refers to the amount of memory allocated to the Driver program for storing data and managing the overall execution. In this case, both the Executors and the Driver have been allocated 8 gigabytes of memory each, which means they have a total of 8 gigabytes of memory available for their respective operations.
