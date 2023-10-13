@@ -1,0 +1,34 @@
+Before installing the library Pyspark, you must execute some instructions:
+
+1. open terminal and run command line 'start-all.sh'
+ 
+2. Update bashrc by using command line 'vi ~/.bashrc'
+
+3. Add the following two lines:
+	  export PYTHONPATH=𝑆𝑃𝐴𝑅𝐾𝐻𝑂𝑀𝐸/𝑝𝑦𝑡ℎ𝑜𝑛:SPARK_HOME/python/lib/py4j-0.10.9-src.zip:$PYTHONPATH
+	  export PATH=𝑆𝑃𝐴𝑅𝐾𝐻𝑂𝑀𝐸/𝑏𝑖𝑛:SPARK_HOME/python:$PATH
+
+4. Hash this line in bashrc:
+	# export PATH=$PATH:/home/bigdata/spark/bin
+
+5. Save the changes and exit `vi`, press the `Esc` key to ensure you are in command mode. Then type `:wq` and press `Enter`.
+   This command will write the changes to the file and quit the editor. 
+
+Note:  exit without saving and press esc then `:q!`
+
+To install the library Pyspark (python), you must run this command '!pip install pyspark' on jupyter notebook or any editer python 
+
+Import libraries
+
+We must run these commands in editor python to perform Spark's core functionalities:
+-	import pyspark
+-	from pyspark.sql import SparkSession
+-	from pyspark import SparkConf
+-	from pyspark.sql.functions import col, sum, count
+-	from pyspark.sql.types import IntegerType
+-	from pyspark.sql.functions import broadcast
+-	import time
+-	import numpy as np
+-	import pandas as pd
+-	import matplotlib.pyplot as plt
+-	import os
