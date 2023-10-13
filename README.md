@@ -99,7 +99,7 @@ We have a structured dataset in CSV format with headers and want to leverage the
 We created a ‘load_data’ function that takes the data path to load and preprocess the dataset using Spark. And each csv file has a different size, such as ‘individual_contributions.csv (5.22GB)’, ‘industry_codes.csv (40.72MB)’, and others, as shown in the above table [1]. Also, each one will take a particular time to load, as shown in the below Figure [3].
 
 
-> ![image.png](./images/image-1.png)
+![image.png](./images/image-1.png)
 
 > <center> Figure [3]: Loading csv files by spark dataframe with execution time </center>
 
@@ -107,7 +107,7 @@ We created a ‘load_data’ function that takes the data path to load and prepr
 
 As shown in Figure [3], the ‘individual_contributions.csv’ file took 292.29 seconds to load in the Spark dataframe due to its size of 5.22 gigabytes, so we focus on this file that contains more than 24 million records with 25 columns, as shown in Figure [4].
 
-> ![Alt text](./images/image-2.png)
+![Alt text](./images/image-2.png)
 > <center>Figure [4]: The schema of individual contributions table</center>
 
 <br><br>
@@ -137,6 +137,7 @@ To answer this question, we got the total amounts for each election cycle that d
 
  
 ![Alt text](./images/image-4.png)
+
 <br/>
  
 ![Alt text](./images/image-5.png)
